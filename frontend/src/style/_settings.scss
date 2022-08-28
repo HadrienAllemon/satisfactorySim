@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "FontAwesome-Solid";
+    src: url("../assets/fonts/Font\ Awesome\ 5\ Free-Solid-900.otf");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "FontAwesome-Solid";
+    src: url("../assets/fonts/Font\ Awesome\ 5\ Free-Regular-400.otf");
+    font-weight: 400;
+}
+
+$font-1: "sans-serif";
+$icon-fa: "FontAwesome-Solid";
+$black: #000;
+$grey: #c1c1c3;
+$white: #fff;
+$red: #ee2e5d;
+$magenta: #ff418c;
+$orange: #f39200;
+$blue: #00bcee;
+$turquoise: #66d2cc;
+$yellow: #ffca00;
+$success: #008000;
+$warning: #f58221;
+$error: #b30000;
+$color-2: #f7f7f7;
+$color-3: #282c34;
+$color-4: rgb(32, 35, 42);
+
+* {
+    //box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline-width: 0px;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    //font-size: 10px;
+    // margin: 0.4rem auto;
+    // max-width: 1296px;
+    font-family: $font-1;
+    //color: $color-3;
+    //background-color: $grey-2;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: $color-3;
+    cursor: pointer;
+}
+
+a:visited {
+    color: $color-3;
+}

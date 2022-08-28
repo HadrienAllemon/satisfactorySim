@@ -1,0 +1,108 @@
+.menu{
+    .title{
+        position: relative;
+        color: white;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        padding: 10px;
+        height: 40px;
+
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            left: 50%;
+            background: #81c747;
+            transform: translateX(-50%);
+            height: 4px;
+            width: calc(100% - 20px);
+            border-radius: 5px;
+        }
+        img{
+            height: 40px;
+            width: 40px;
+            margin-right: 10px;
+        }
+        h1{
+            height: 25px;
+        }
+    }
+    .links{
+        flex:1;
+        a{
+            display: flex;
+            margin: 10px;
+            color: white;
+            height: 40px;
+            border-radius: 5px;
+            align-items: center;
+            text-decoration: none;
+            i{
+                font-size: 20px;
+                width: 40px;
+                text-align: center;
+                
+            }
+            h2{
+                font-size: 16px;
+                font-weight: 400;
+                white-space: nowrap;
+            }
+            &:hover{
+                background: rgba(196, 196, 196, 0.5);
+            }
+
+            &.active{
+                background: linear-gradient(90deg, rgba(196, 196, 196, 0.50) 0%, rgba(196, 196, 196, 0.25) 100%);
+                font-weight: bold;
+            }
+        }
+    }
+    .user{
+        position: relative;
+        color: white;
+        padding: 10px;
+
+        &::before{
+            content: "";
+            position: absolute;
+            top: -4px;
+            left: 50%;
+            background: #81c747;
+            transform: translateX(-50%);
+            height: 4px;
+            width: calc(100% - 20px);
+            border-radius: 5px;
+        }
+        .detail{
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            img {
+                height: 40px;
+                width: 40px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+            .info{
+                padding-left: 20px;
+                font-size: 16px;
+                white-space: nowrap;
+                .username {
+                    font-weight: bold;
+                }
+            }
+        }
+        .logout {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            font-size: 20px;
+            transform: translateY(-50%);
+            height: 20px;
+            cursor: pointer;
+        }
+    }
+}

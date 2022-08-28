@@ -1,12 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-import EdgesFlow from "./components/flow";
-import Base from "./components/base";
+import Menu from './components/Menu';
+import { Outlet } from 'react-router-dom';
 
 function App() {
   return (
-    <div style={{width:"100vw", height:"100vh"}}>
-     <Base/>
+    <div className="App">
+      <Menu/>
+      <div className="content">
+        <Outlet/>
+      </div>
     </div>
   );
 }
